@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="body">
+        <div class="container">
+
+            <div class="top-bar">
+                <a href="index.html"><i class='bx bx-music'></i></a>
+                <span>Now Playing</span>
+                <a href="https://portfolio-sambit.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+            <div class="img-area">
+                <img src="" alt="">
+            </div>
+            <div class="song-details">
+                <p class="name"></p>
+                <p class="artist"></p>
+            </div>
+
+            <div class="progress-area">
+
+                <div class="progress-bar">
+                    <audio id="main-audio" src=""></audio>
+                </div>
+                <div class="song-timer">
+                    <span class="current-time">0:00</span>
+                    <span class="max-duration">0:00</span>
+                </div>
+                <audio id="main-audio" src=""></audio>
+            </div>
+
+            <div class="controls">
+                <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                <i id="prev" class="material-icons prev">fast_rewind</i>
+                <div class="play-pause">
+                    <i class="material-icons play">play_arrow</i>
+                </div>
+                <i id="next" class="material-icons next">fast_forward</i>
+                <i id="more-music" class="material-icons">queue_music</i>
+            </div>
+
+            <div class="music-list">
+                <div class="header">
+                    <div class="row">
+                        <i class="list material-icons">queue_music</i>
+                        <span>Music List</span>
+                    </div>
+                    <i id="close" class="material-icons">close</i>
+                </div>
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-bottom">
+                <a href="mailto:sambitmondal2005@gmail.com">
+                    <p>&copy; 2023 | Designed by : Sambit Mondal</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="music-list.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
